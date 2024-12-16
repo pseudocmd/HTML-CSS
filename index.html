@@ -3,80 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Global University's Starlink Program and master satellite communications technology">
     <title>Starlink Program - Global University</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Same navigation as index.html -->
+    <header class="primary-header" role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="/" class="logo" aria-label="Home">
+                    <img src="assets/logo.svg" alt="Global University Logo" width="150" height="40">
+                </a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primary-navigation" class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/programs" class="nav-link">Programs</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section class="hero starlink-hero">
-            <h1>Starlink Program</h1>
-            <p>Join the future of satellite communications</p>
-        </section>
-
-        <section class="program-details">
-            <div class="course-grid">
-                <div class="course-card">
-                    <h2>Satellite Communications Basics</h2>
-                    <p>Duration: 8 weeks</p>
-                    <ul>
-                        <li>Fundamentals of satellite communication</li>
-                        <li>Orbital mechanics</li>
-                        <li>Signal processing</li>
-                    </ul>
-                </div>
-
-                <div class="course-card">
-                    <h2>Starlink Technology</h2>
-                    <p>Duration: 12 weeks</p>
-                    <ul>
-                        <li>Satellite constellation design</li>
-                        <li>Ground station operations</li>
-                        <li>Network architecture</li>
-                    </ul>
-                </div>
-
-                <div class="course-card">
-                    <h2>Installation & Maintenance</h2>
-                    <p>Duration: 6 weeks</p>
-                    <ul>
-                        <li>Equipment setup</li>
-                        <li>Troubleshooting</li>
-                        <li>System optimization</li>
-                    </ul>
+    <main id="main-content">
+        <section class="hero starlink-hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Starlink Program</h1>
+                <p class="hero-subtitle">Join the future of satellite communications</p>
+                <div class="hero-cta">
+                    <a href="#apply" class="btn btn-primary">Apply Now</a>
+                    <a href="#program-details" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <section class="requirements">
-            <h2>Program Requirements</h2>
-            <div class="requirements-grid">
-                <div class="req-card">
-                    <h3>Educational Background</h3>
-                    <ul>
-                        <li>High school diploma or equivalent</li>
-                        <li>Basic understanding of physics</li>
-                        <li>Computer literacy</li>
-                    </ul>
-                </div>
+        <section id="program-details" class="program-details" aria-labelledby="courses-title">
+            <div class="container">
+                <h2 id="courses-title" class="section-title">Course Modules</h2>
+                <div class="course-grid">
+                    <article class="course-card" data-aos="fade-up">
+                        <div class="card-content">
+                            <h3>Satellite Communications Basics</h3>
+                            <div class="course-meta">
+                                <span class="duration"><svg aria-hidden="true" class="icon"><!-- Clock icon --></svg>8 weeks</span>
+                                <span class="level">Beginner Friendly</span>
+                            </div>
+                            <ul class="course-features">
+                                <li>Fundamentals of satellite communication</li>
+                                <li>Orbital mechanics</li>
+                                <li>Signal processing</li>
+                            </ul>
+                            <a href="#module-1" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
 
-                <div class="req-card">
-                    <h3>Technical Requirements</h3>
-                    <ul>
-                        <li>Access to a computer</li>
-                        <li>Internet connection</li>
-                        <li>Basic software proficiency</li>
-                    </ul>
+                    <article class="course-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-content">
+                            <h3>Starlink Technology</h3>
+                            <div class="course-meta">
+                                <span class="duration"><svg aria-hidden="true" class="icon"><!-- Clock icon --></svg>12 weeks</span>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <ul class="course-features">
+                                <li>Satellite constellation design</li>
+                                <li>Ground station operations</li>
+                                <li>Network architecture</li>
+                            </ul>
+                            <a href="#module-2" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
+
+                    <article class="course-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-content">
+                            <h3>Installation & Maintenance</h3>
+                            <div class="course-meta">
+                                <span class="duration"><svg aria-hidden="true" class="icon"><!-- Clock icon --></svg>6 weeks</span>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <ul class="course-features">
+                                <li>Equipment setup</li>
+                                <li>Troubleshooting</li>
+                                <li>System optimization</li>
+                            </ul>
+                            <a href="#module-3" class="btn btn-outline">View Details</a>
+                        </div>
+                    </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="requirements" aria-labelledby="requirements-title">
+            <div class="container">
+                <h2 id="requirements-title" class="section-title">Program Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="req-card">
+                        <h3>Educational Background</h3>
+                        <ul class="req-list">
+                            <li>High school diploma or equivalent</li>
+                            <li>Basic understanding of physics</li>
+                            <li>Computer literacy</li>
+                        </ul>
+                    </div>
+
+                    <div class="req-card">
+                        <h3>Technical Requirements</h3>
+                        <ul class="req-list">
+                            <li>Access to a computer</li>
+                            <li>Stable internet connection</li>
+                            <li>Basic software proficiency</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apply" class="application-section" aria-labelledby="apply-title">
+            <div class="container">
+                <h2 id="apply-title" class="section-title">Apply Now</h2>
+                <form class="application-form" action="/submit-application" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="education">Educational Background</label>
+                            <select id="education" name="education" required>
+                                <option value="">Select your highest education</option>
+                                <option value="high-school">High School</option>
+                                <option value="bachelors">Bachelor's Degree</option>
+                                <option value="masters">Master's Degree</option>
+                                <option value="phd">Ph.D.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Why are you interested in this program?</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer>
-        <!-- Same footer as index.html -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="assets/logo-white.svg" alt="Global University Logo" width="120" height="32">
+                    <p>Empowering the next generation of satellite communication experts.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/programs">All Programs</a></li>
+                        <li><a href="/admissions">Admissions</a></li>
+                        <li><a href="/resources">Resources</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p>123 University Ave<br>Tech City, TC 12345</p>
+                        <p>Email: <a href="mailto:info@globaluniversity.edu">info@globaluniversity.edu</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow us on LinkedIn"><svg class="icon"><!-- LinkedIn icon --></svg></a>
+                        <a href="#" aria-label="Follow us on Twitter"><svg class="icon"><!-- Twitter icon --></svg></a>
+                        <a href="#" aria-label="Follow us on Facebook"><svg class="icon"><!-- Facebook icon --></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Global University. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                    <a href="/accessibility">Accessibility</a>
+                </nav>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
